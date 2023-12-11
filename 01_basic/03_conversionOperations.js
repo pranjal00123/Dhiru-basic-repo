@@ -44,11 +44,11 @@
 
 // Conversion into boolean-----------------------------------------------
 
-let something = 1;
+// let something = 1;
 
-let changeIntoBoolean = Boolean(something);
-console.log(typeof changeIntoBoolean);
-console.log(changeIntoBoolean);;
+// let changeIntoBoolean = Boolean(something);
+// console.log(typeof changeIntoBoolean);
+// console.log(changeIntoBoolean);;
 
 
 // 1 => boolean / true
@@ -58,6 +58,23 @@ console.log(changeIntoBoolean);;
 // string => boolean / true;
 // boolean => boolean / true => true / false => false;
 // 0 => boolean / false
+
+//====================================================================
+
+
+// let str1 = "Hello ";
+// let str2 = "Dhirendra"
+// let str3 = str1 + str2;
+// console.log(str3); // => Hello Dhirendra
+
+let gameScore = 100;
+let afterScore1 = gameScore++;
+
+let afterScore2 = ++gameScore;
+console.log(afterScore1);
+console.log(afterScore2);
+
+
 
 
 
