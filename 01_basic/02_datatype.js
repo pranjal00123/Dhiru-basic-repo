@@ -16,8 +16,8 @@ console.log(typeof isLoggedIn);
 let city;
 console.log(typeof city) // undefined
 
-let data = null;
-console.log(typeof data) // null
+let data = null; //null
+console.log(typeof data) // object
 
 //Object 
 
