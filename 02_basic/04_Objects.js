@@ -39,12 +39,45 @@ let resultObj = {obj1 , obj2};
 
 // console.log("obj5", obj5);
 
-console.log(Object.keys(eloeloUser));
-console.log(Object.values(eloeloUser));
-console.log(Object.entries(eloeloUser));
+// console.log(Object.keys(eloeloUser));
+// console.log(Object.values(eloeloUser));
+// console.log(Object.entries(eloeloUser));
 
-console.log(eloeloUser.hasOwnProperty("firstname")); // false
-console.log(eloeloUser.hasOwnProperty("isLoggedIn")); // true
+// console.log(eloeloUser.hasOwnProperty("firstname")); // false
+// console.log(eloeloUser.hasOwnProperty("isLoggedIn")); // true
+
+// Destructuring an object ==================================
+let course = {
+    name: "JavaScript",
+    validity: "9 months",
+    cousreYearlyValue: "999 rs"
+}
+
+
+const {cousreYearlyValue : money} = course;
+
+// console.log(cousreYearlyValue);
+console.log(money);// 999 rs
+
+
+// JSON = javascript object notation ===========================================
+// [
+//     {
+//         name: "dhirendra",
+//         email: "sample@email.com"
+//     },
+//     {
+//         name: "Govind",
+//         email: "sample2@email.com"
+//     }
+// ]
+
+
+
+
+
+
+
 
 
 
