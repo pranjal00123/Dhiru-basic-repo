@@ -45,3 +45,26 @@ greeting("Raj"); // hello Raj how are you!
 
 console.log(squareNum(5));
 
+let user = {
+    username: "govind",
+    prices: "999"
+}
+
+function getObjectData(anyObject){
+    console.log(`The name of user iis ${anyObject.username} and price is ${anyObject.prices}`)
+} 
+
+getObjectData(user);
+
+// function credit(value1){
+//     console.log(value1)
+// }
+
+function credit(...value){
+    console.log(value) //rest operator (...) giving an array
+}
+
+credit(400, 300, 100);
+
+
+
