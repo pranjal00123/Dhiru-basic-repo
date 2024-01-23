@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="week-days">
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thrusday</div>
+        <div>Friday</div>
+    </div>
+</body>
+<script> 
+    let weeksday = document.querySelector(".week-days")
+
+    console.log(weeksday);
+    let divDays = weeksday.querySelectorAll("div");
+    console.log(divDays)
+    divDays.forEach((day)=>{
+       let days= day.innerHTML
+    })
+</script>
+</html>

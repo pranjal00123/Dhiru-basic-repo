@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        padding: 0px;
+        margin: 0px;
+    }
+    .container {
+        background-color: green;
+        color: white;
+    }
+    .nav-list{
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+    .nav-list li {
+        padding-right: 20px;
+        margin-right: 5px;
+        list-style: none;
+        text-align: center !important;
+    }
+
+    .nav-list li:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .nav-list li::after {
+        border-bottom: 2px solid white;
+    }
+
+</style>
+<body>
+
+</body>
+<script>
+    let div = document.createElement("div");
+    div.className = "container"
+    let ul = document.createElement("ul");
+
+    let Home = document.createElement("li");
+    Home.innerText = "Home";
+    ul.appendChild(Home);
+
+    let About = document.createElement("li");
+    About.innerText = "About";
+    ul.appendChild(About);
+
+    let services = document.createElement("li");
+    services.innerText = "Services";
+    ul.appendChild(services)
+
+    let contact = document.createElement("li");
+    contact.innerHTML = "Contact";
+    ul.appendChild(contact);
+    ul.className = "nav-list"
+    document.remo
+    console.log(ul)
+    div.appendChild(ul)
+    console.log(div)
+    document.body.appendChild(div)
+</script>
+
+</html>
