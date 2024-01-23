@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement("li");
+        li.innerText = `${langName}`
+        document.querySelector(".language")
+        .appendChild(li)
+    }
+    addLanguage("Java")
+    addLanguage("Python")
+
+    function addOptimisedLang(langName){
+        const li  = document.createElement("li");
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language")
+        .appendChild(li)
+    }
+    addOptimisedLang("SQL")
+    addOptimisedLang("C++")
+    
+    //Edit List
+    let secondLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement("li");
+    newLi.innerText = "COBOL";
+    secondLang.replaceWith(newLi);
+
+    //Edit 
+    let firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>New language</li>"
+
+    //Remove 
+    let lastLang = document.querySelector("li:first-child");
+    lastLang.remove();
+    
+
+</script>
+</html>
